@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #2d354a;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box{
+    border: 1px solid #2d354a;
+    width: 310px;
+    height: 450px;
+    position: fixed;
+    left: 38%;
+    top: 10%;
+    box-shadow: 2px 4px 19px;
+    background:#2d354a ;
+    border-radius: 20px;
+}
+.subbox{
+    margin: 40px 7px;
+
+}
+.textview{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0%;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+
+}
+
+input[type="button"]{
+    width: 55px;
+    height: 55px;
+    border-radius: 60px;
+    font-size: 20px;
+    border: none;
+    border-bottom: none;
+    box-shadow: 5px 0px 8px 1px #191919;
+    background: white;
+    color: #2d354a;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder ;
+    outline: none;
+}
+input[type="button"]:hover{
+    background: red;
+}
+input[type="submit"]{
+    width: 55px;
+    height: 55px;
+    border-radius: 60px;
+    font-size: 20px;
+    border: none;
+    border-bottom: none;
+    box-shadow: 5px 0px 8px 1px #191919;
+    background:url(blue.PNG);
+    color: white;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:bolder ;
+    outline: none;
+}
+input[value="="]{
+    background:red;
+}
+h2{
+    position: fixed;
+    top: 13%;
+    left: 45%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
