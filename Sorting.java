@@ -1,15 +1,15 @@
-package com.sorting;
+//selection sort and merge sort in java
 
 public class Sorting {
   
-  
+  static int comparisons;
  
   public static void main(String[] args) {
   int n=10000;
   int[]array= new int[n];
   System.out.println("arrays before sorting:");
   for(int i=0;i<array.length;i++){
-    array[i]=(int)(Math.random()*n)+1;
+    array[i]=(int)(Math.random()*(n+1));
     System.out.print(array[i]+" ");
     
   }
@@ -20,13 +20,13 @@ public class Sorting {
    }
    System.out.println();
   int z= mergeSort(array,0,n-1);
-  int w= Merge(array,0,n/2,n-1);
+
    System.out.println("merge sort after sorting:");
    for(int i:array){
      System.out.print(i+" ");
    }
    System.out.println();
-   System.out.print(z+" compares and "+w+" comparisons");
+   System.out.print(z+" exchanges and "+comparisons+" comparisons");
   }
   
   
@@ -57,7 +57,7 @@ public class Sorting {
 
 public static int mergeSort(int[] intArray, int first,int last) {
     
-    int compares = 0;
+     int compares = 0;
      if(first < last) {
       int mid = (first + last) / 2;
 
@@ -71,7 +71,7 @@ public static int mergeSort(int[] intArray, int first,int last) {
 }
 
 public static int Merge(int[] intArray, int first, int mid, int last) { 
-int comparisons = 0;
+comparisons = 0;
 int first1 = first, last1 = mid; 
 int first2 = mid + 1, last2 = last; 
 int temp[] = new int[intArray.length]; 
