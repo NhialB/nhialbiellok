@@ -8,6 +8,7 @@ public class Sorting {
   int n=10000;
   int[]array= new int[n];
   System.out.println("arrays before sorting:");
+  //generate random arrays
   for(int i=0;i<array.length;i++){
     array[i]=(int)(Math.random()*(n+1));
     System.out.print(array[i]+" ");
@@ -15,6 +16,7 @@ public class Sorting {
   }
   System.out.println();
    sort(array);
+//print arrays after sorting 
    for(int i:array){
      System.out.print(i+" ");
    }
@@ -29,7 +31,7 @@ public class Sorting {
    System.out.print(z+" exchanges and "+comparisons+" comparisons");
   }
   
-  
+  //sort the arrays in selection sort
   public static void sort(int[]a){
   
     int comparisons=0;
@@ -54,7 +56,7 @@ public class Sorting {
      System.out.println("you have "+comparisons+" comparisons and "+exchanges+" exchanges");
       
 }
-
+//merge sort method
 public static int mergeSort(int[] intArray, int first,int last) {
     
      int compares = 0;
@@ -69,7 +71,7 @@ public static int mergeSort(int[] intArray, int first,int last) {
 
  return compares;
 }
-
+//method for sorting the merge sort algorithm 
 public static int Merge(int[] intArray, int first, int mid, int last) { 
 comparisons = 0;
 int first1 = first, last1 = mid; 
